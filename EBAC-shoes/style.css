@@ -32,7 +32,10 @@ header div{
     justify-content: space-between;
 }
 
-
+header nav{
+    display: flex;
+    align-items: center;
+}
 
 nav ul li{
     font-weight: bold;
@@ -104,7 +107,6 @@ footer h3{
     header nav ul{
         display: flex;
         gap: 20px;
-        align-items: center;
     }
     p{
         font-size: 18px;
