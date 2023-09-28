@@ -43,6 +43,7 @@ nav ul li{
     font-weight: bold;
     list-style: none;
     cursor: pointer;
+    
 }
 
 .about img{
@@ -140,7 +141,7 @@ footer h3{
 
     .products>div{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 18px;
     }
 }
