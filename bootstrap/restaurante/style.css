@@ -1,0 +1,48 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.navbar{
+    background-color: #e15f41;
+}
+.navbar-brand{
+    font-family: 'Pacifico', cursive;
+    font-size: 28px;
+}
+.navbar-brand,
+#header .nav .nav-link,
+.navbar-brand:hover{
+    color: #fff;
+}
+#header .nav .nav-link.active{
+    background-color: #fff;
+    color: #e15f41;
+}
+.navbar-toggler{
+    background-color: #ffeae6;
+}
+
+.section-title{
+    font-family: 'Pacifico', cursive;
+}
+.text-colored{
+    color: #e15f41;
+}
+
+#about, #menu{
+    background-color: #ffeae6;
+}
+.nav-menu .nav-link.active,
+.nav-menu .nav-link.active:hover,
+#contact button{
+    background-color: #e15f41;
+    color: #fff;
+}
+.nav-menu .nav-link:hover{
+    color: #e15f41;
+}
+.social-links li{
+    list-style: none;
+}
+.social-links a{
+    text-decoration: none;
+}

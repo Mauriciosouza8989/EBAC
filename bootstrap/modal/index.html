@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/bootstrap.min.css">
+    <title>Modal</title>
+</head>
+<body>
+    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-example">
+        Abrir modal
+    </button>
+    <div class="modal" id="modal-example" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h5>Título da modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </header>
+                <div class="modal-body">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, unde error natus earum deserunt eaque quaerat fugit animi consequuntur porro molestiae amet impedit voluptatem officia obcaecati! Ex temporibus mollitia maiores?
+                    </p>
+                </div>
+                <footer class="modal-footer">
+                    <button class="btn btn-warning" type="button" data-bs-dismiss="modal">Cancelar</button>
+                    <button class="btn btn-success" type="button" data-bs-dismiss="modal">Confirmar</button>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="../lib/cdn.jsdelivr.net_npm_bootstrap@5.3.2_dist_js_bootstrap.bundle.min.js"></script>
+</body>
+</html>
