@@ -1,0 +1,23 @@
+.form {
+  max-width: 300px;
+  width: 100%;
+  margin: auto;
+}
+.form__control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.form__submit {
+  padding: 8px;
+}
+.form__submit--sending {
+  cursor: wait;
+}
+
+p::selection {
+  background-color: rgb(255, 255, 188);
+}
+
+/*# sourceMappingURL=main.css.map */
