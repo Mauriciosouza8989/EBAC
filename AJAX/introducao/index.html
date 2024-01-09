@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <title>CEP</title>
+</head>
+<body>
+    <div class="container">
+        <form id="form-pedido">
+            <div class="row mt-5">
+                <h4>Dados básicos</h4>
+                <div class="row">
+                    <div class="col-md-3 mb-sm-3 col-sm-12">
+                        <input id="name" type="text" class="form-control" placeholder="Nome">
+                    </div>
+                    <div class="col-md-5 mb-sm-3">
+                        <input id="surname" type="text" class="form-control" placeholder="Sobrenome">
+                    </div>
+                    <div class="col-md-4 mb-sm-3">
+                        <input id="email" type="email" class="form-control" placeholder="E-mail">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3 mb-5">
+                <h4>Dados da entrega</h4>
+                <div class="row">
+                    <div class="col-md-3 mb-sm-3 d-flex">
+                        <input id="cep" type="text" class="form-control" placeholder="CEP">
+                        <button class="btn btn-primary" id="search-cep">
+                            <i class="bi bi-search"></i>
+                            <span class="d-none spinner-border spinner-border-sm"></span>
+                        </button>
+                    </div>
+                    <div class="col-md-7 mb-sm-3">
+                        <input id="adress" type="text" class="form-control" placeholder="Endereço">
+                    </div>
+                    <div class="col-md-2 mb-sm-3">
+                        <input id="house-number" type="number" class="form-control" placeholder="Número">
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success">
+                Enviar pedido
+            </button>
+        </form>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="jquery.mask.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
