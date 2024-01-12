@@ -1,0 +1,102 @@
+Comandos para configurar eslint & Prittier no projeto react:
+
+================================================================================================================================================
+Criar arquivo ".editorsonfig"
+Configurações:
+
+root = true
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+================================================================================================================================================
+Instalar "eslint+plugins":
+
+1° npm i @typescript-eslint/eslint-plugin@latest, eslint-plugin-react@latest, @typescript-eslint/parser@latest, eslint@latest --legacy-peer-deps
+2° npx eslint --init
+3° npm install --save-dev eslint-plugin-react-hooks
+
+Configurações no arquivo ".eslintrc.json":
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "react",
+        "react-hooks"
+    ],
+    "rules": {
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+      "react/prop-types": "off",
+      "react/react-in-jsx-scope": "off",
+      "@typescript-eslint/explicit-module-boundary-types": "off"
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    }
+}
+================================================================================================================================================
+4° npm install --save-dev eslint-plugin-prettier eslint-config-prettier
+5° npm install --save-dev --save-exact prettier
+6° criar arquivo ".prettierrc"
+
+Configurações do arquivo ".prettierrc:
+{
+  "trailingComma": "none",
+  "semi": false,
+  "singleQuote": true
+}
+================================================================================================================================================
+7° criar pasta ".vscode" com arquivo "settings.json"
+
+configurações do arquivo "settings.json"
+{
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
+
+================================================================================================================================================
+
+por fim Rode os comandos:
+"npx eslint ."
+"npx prettier --write .\src\"
+
+
+instalando a extenção "React developer tools" no navegador,
+podemos visualizar os componentes e profiler na aba inspecionar
+link: https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?pli=1
+
+
+
+
+
+PARA REMOVER TODOS OS ERROS DOS ARQUIVOS RODE O COMANDO: 
+"npx eslint --fix ."
+
+
+
+
+
+
+
+================================================================================================================================================

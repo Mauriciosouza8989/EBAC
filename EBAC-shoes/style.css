@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #feeeee;
+}
+.container{
+    padding: 20px;
+}
+
+header{
+    background-color: blue;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+h1, h2{
+    font-style: italic;
+}
+p{
+    line-height: 24px;
+}
+
+header div{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+}
+
+
+nav ul li{
+    font-weight: bold;
+    list-style: none;
+    cursor: pointer;
+    
+}
+
+.about img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+h2{
+    color: blue;
+    border-bottom: 3px solid blue;
+    padding: 16px 0;
+    margin-bottom: 20px;
+}
+h3{
+    font-size: 24px;
+}
+.products{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.product{
+    background-color: #fff;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    
+}
+.product img{
+    max-width: 100%;
+    height: calc(100% - 30px);
+}
+.product button{
+    width: 100%;
+    background-color: blue;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 200ms;
+}
+.product button:hover{
+    background-color: rgb(9, 9, 225);
+}
+footer{
+    width: 100%;
+    padding: 18px;
+    color: #fff;
+    text-align: center;
+    background-color: blue;
+    margin-top: 30px;
+    font-size: 24px;
+}
+footer h3{
+    font-style: italic;
+    display: inline;
+}
+
+@media screen and (min-width: 641px) {
+    header nav ul{
+        height: 100%;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    p{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    .products>div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+    }
+}
+@media screen and (min-width: 1023px){
+    header div{
+        max-width: 1024px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .about{
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+
+    .products>div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 18px;
+    }
+}
+@media (orientation: portrait) and (min-width: 641px){
+    .about{
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+}

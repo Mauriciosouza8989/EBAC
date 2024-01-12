@@ -1,0 +1,12 @@
+"use strict";
+const nome = 'maurício';
+const idade = 26;
+const familia = ['Gisele', 'Marlene', 'José Elias', 'Luciano', 'Gessica', 'Patricia',];
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+let idadeDaAna = 25;
+idadeDaAna = '25 anos';
+let dadosDaApi;
+dadosDaApi = 10;
+dadosDaApi = true;
+dadosDaApi = [10, 20, 30];
+dadosDaApi = 'string';
