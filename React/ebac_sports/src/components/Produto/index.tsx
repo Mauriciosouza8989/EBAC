@@ -6,7 +6,6 @@ import { favoritar } from '../../store/reducers/favoritos'
 import { useGetProdutosQuery } from '../../services/api'
 import { RootReducer } from '../../store'
 import { Produto as ProtoType } from '../../App'
-import { useState } from 'react'
 
 export const paraReal = (valor: number) =>
   new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(
