@@ -6,6 +6,7 @@ import { favoritar } from '../../store/reducers/favoritos'
 import { useGetProdutosQuery } from '../../services/api'
 import { RootReducer } from '../../store'
 import { Produto as ProtoType } from '../../App'
+import { useState } from 'react'
 
 export const paraReal = (valor: number) =>
   new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(
@@ -35,11 +36,9 @@ const ProdutoComponent = () => {
             onClick={() => dispatch(favoritar(produto))}
             type="button"
           >
-            {itensFavoritos.map((item) =>
-              item.id !== produto.id
-                ? '+ Adicionar aos favoritos'
-                : '- Remover dos favoritos'
-            )}
+            {itensFavoritos.some((item) => item.id === produto.id)
+              ? '- Remover dos favoritos'
+              : '+ Adicionar aos favoritos'}
           </S.BtnComprar>
           <S.BtnComprar
             onClick={() => dispatch(adicionar(produto))}
