@@ -2,7 +2,11 @@ import styled from 'styled-components'
 
 import { cores } from '../../styles'
 
-export const Produto = styled.div``
+export const Produto = styled.div`
+  h2 {
+    text-align: center;
+  }
+`
 
 export const Titulo = styled.h3`
   min-height: 64px;
